@@ -1,5 +1,6 @@
 const express = require('express');
 const mongoose = require('mongoose');
+const cors = require('cors');
 const routes = require('./routes');
 
 const app = express();
@@ -11,6 +12,7 @@ mongoose.connect('mongodb://thiago:910412680@cluster0-shard-00-00-lzv2m.mongodb.
     useCreateIndex: true
 });
 
+app.use(cors());
 app.use(express.json());
 app.use(routes);
 
