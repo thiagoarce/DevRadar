@@ -5,11 +5,24 @@ li.dev-item{
     padding: 20px;
 }
 
+li.dev-item .dev-icons{
+    display: flex;
+    align-items: flex-end;
+    flex-direction: row-reverse;
+    color: #999;
+  
+}
+
+li.dev-item .dev-icons :hover{
+    color: crimson;
+    transform: scale(1.1);
+}
 li.dev-item header{
     display: flex;
     flex-direction: row;
     align-items: center;
 }
+
 
 li.dev-item header img{
     width: 54px;
